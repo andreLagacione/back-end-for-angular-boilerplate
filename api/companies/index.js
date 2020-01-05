@@ -4,14 +4,25 @@ const router = require('express').Router()
 
 router.get('/', (_, response) => {
 	const empresas = [{
-		descricao: 'COCA_COLA',
-		codigo: 'GR00000001'
+		description: 'Motorola',
+		id: 'GR00000001',
+		imageName: 'motorola'
 	}, {
-		descricao: 'HEINEKEN',
-		codigo: 'GR00000002'
+		description: 'Apple',
+		id: 'GR00000002',
+		imageName: 'apple'
 	}, {
-		descricao: 'P&G',
-		codigo: 'GR00000003'
+		description: 'P&G',
+		id: 'GR00000003',
+		imageName: 'p&g'
+	}, {
+		description: 'BMW',
+		id: 'GR00000004',
+		imageName: 'bmw'
+	}, {
+		description: 'Shell',
+		id: 'GR00000005',
+		imageName: 'shell'
 	}];
 
 	response.json(empresas);

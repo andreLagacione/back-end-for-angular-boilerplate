@@ -3,7 +3,7 @@ const chance = new Chance();
 
 
 exports.calcTotalItems = (pageNumber, pageSize) => {
-    const totalPages = Math.floor(75 / pageSize);
+    const totalPages = Math.round(75 / pageSize);
     const totalItems = pageSize || 25;
 
     if (pageNumber === totalPages) {

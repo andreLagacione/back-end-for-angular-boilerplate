@@ -2,7 +2,7 @@ const { pageable } = require('./pageable');
 const { sort } = require('./sort');
 
 exports.pagination = (pageNumber, pageSize) => {
-    const totalPages = Math.floor(75 / pageSize);
+    const totalPages = Math.round(75 / pageSize);
     const isFirstPage = pageNumber === 0 ? true : false;
     const isLastPage = pageNumber < totalPages ? false : true;
 

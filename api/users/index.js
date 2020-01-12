@@ -30,6 +30,7 @@ router.post('/', (request, response) => {
     const users = getRandomList(totalItems);
     const _pagination = pagination(pageNumber, pageSize);
     _pagination.content = users;
+    _pagination.number = pageNumber;
     response.json(_pagination);
 });
 
